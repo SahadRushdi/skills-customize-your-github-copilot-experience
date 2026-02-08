@@ -1,19 +1,55 @@
 
-# 🎮 Hangman Game Challenge
+# 📘 Assignment: Games in Python
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+## 🎯 Objective
 
-## � What You'll Build
+Build a classic Hangman word-guessing game to practice Python string manipulation, loops, conditionals, and user input handling while creating an interactive gaming experience.
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+## 📝 Tasks
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+### 🛠️ Game Setup and Word Selection
 
-## ✅ Must Have's
+#### Description
+Create the foundation of the Hangman game by setting up a word list and implementing random word selection to start each game.
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+#### Requirements
+Completed program should:
+
+- Define a list of at least 5-10 words for the game
+- Use the `random` module to randomly select a word from the list
+- Initialize game variables (attempts remaining, guessed letters, current progress)
+- Set a reasonable number of incorrect guesses allowed (e.g., 6-8 attempts)
+
+### 🛠️ Game Logic and User Interaction
+
+#### Description
+Implement the core game loop that accepts player input, validates guesses, and updates the game state accordingly.
+
+#### Requirements
+Completed program should:
+
+- Accept single letter guesses from the player using `input()`
+- Validate that the input is a single letter and hasn't been guessed before
+- Display the current progress in `_ _ _` format showing correctly guessed letters
+- Track and display incorrect guesses remaining
+- Update the word progress when correct letters are guessed
+- Example display:
+  ```
+  Word: _ a _ _ _ a _
+  Guesses remaining: 5
+  Enter a letter: 
+  ```
+
+### 🛠️ Win/Lose Conditions
+
+#### Description
+Implement the game ending logic to determine when the player wins or loses, and display appropriate messages.
+
+#### Requirements
+Completed program should:
+
+- Check if the word is completely guessed (player wins)
+- Check if attempts are exhausted (player loses)
+- Display a congratulatory message when the player wins
+- Reveal the correct word and display a game over message when the player loses
+- End the game loop when either condition is met
